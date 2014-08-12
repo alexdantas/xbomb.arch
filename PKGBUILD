@@ -17,7 +17,7 @@ build() {
   sed -i 's/\/X11R6//' Makefile
   sed -i 's/lib/share\/X11/g' Makefile
   sed -i 's/\/man\//\/share\/man\//g' Makefile
-  make
+  make CFLAGS=-g
 }
 
 package() {
